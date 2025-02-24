@@ -30,9 +30,9 @@ IPC 공유메모리를 사용하는 채팅 프로그램
     - ncurses에 한글을 출력하고 싶을 땐 아래의 라이브러리를 추가로 설치
       - `sudo apt-get install libncursesw5-dev`<br/><br/>
   - chat 폴더 업로드  <br/><br/>
-  - `gcc -o shmremove shmremove.c` 로 shmremove 목적 파일 생성 
-    - 주의 : shmremove 목적 파일 명이 다르면 안됨 (chat 코드 내부에서 shmremove를 호춣함)  <br/><br/>
-  - `gcc -o chat chat.c -lncurses -pthread`로 chat 목적 파일 생성  <br/><br/>
+  - `gcc -o shmremove shmremove.c` 로 shmremove 실행 파일 생성 
+    - 주의 : shmremove 실행 파일 명이 다르면 안됨 (chat 코드 내부에서 shmremove를 호출)  <br/><br/>
+  - `gcc -o chat chat.c -lncurses -pthread`로 chat 실행 파일 생성  <br/><br/>
   - `./chat [username]`으로 채팅 프로그램 접속
     - 주의 : 최대 3명까지 동시 접속 가능하도록 설정함 <br/><br/>
   
