@@ -1,4 +1,4 @@
-# Chat-Program-SharedMemory
+# Chat-Program-Using-SharedMemory
 IPC 공유메모리를 사용하는 채팅 프로그램
 
 ![Image](https://github.com/user-attachments/assets/41b7daa3-3adf-4147-b233-42277c25e7f2)
