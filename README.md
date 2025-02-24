@@ -29,7 +29,7 @@ IPC 공유메모리를 사용하는 채팅 프로그램
     - `sudo apt-get install gnome-termina`
     - ncurses에 한글을 출력하고 싶을 땐 아래의 라이브러리를 추가로 설치
       - `sudo apt-get install libncursesw5-dev`<br/><br/>
-  - shmremove.c, chat.c, chatshm.h를 같은 폴더 위치로 업로드  <br/><br/>
+  - chat 폴더 업로드  <br/><br/>
   - `gcc -o shmremove shmremove.c' 로 shmremove 목적 파일 생성 
     - 주의 : shmremove 목적 파일 명이 다르면 안됨 (chat 코드 내부에서 shmremove를 호춣함)  <br/><br/>
   - `gcc -o chat chat.c -lncurses -pthread'로 chat 목적 파일 생성  <br/><br/>
@@ -50,14 +50,24 @@ IPC 공유메모리를 사용하는 채팅 프로그램
     - C 언어  <br/><br/>
 - **리포지토리 구조**
   ```
-  ├── RainShield
-  │   ├── Term_master
-  │   │   └── Term_master.ino
-  │   └── Term_slave
-  │       └── Term_slave.ino
-  └── 발표자료&제안서
-      ├── 7조_어드벤처디자인_발표자료.pdf
-      └── 어벤디 프로젝트 제안서.pdf
+  ├── chat
+  │   ├── chat.c
+  │   ├── chatshm.h
+  │   └── shmremove.c
+  ├── 버전관리
+  │   ├── v0
+  │   │   ├── ThreadCooperation.c
+  │   │   └── v0_보고서&가이드.pdf
+  │   ├── v1
+  │   │   └── v1_보고서&가이드.pdf
+  │   ├── v2
+  │   │   └── v2_보고서&가이드.pdf
+  │   └── v3
+  │       ├── chatshm.h
+  │       ├── csechat.c
+  │       ├── shmremove.c
+  │       └── v3_보고서&가이드.pdf
+  └── 보고서및가이드.pdf
   ```
 <br/>
   
